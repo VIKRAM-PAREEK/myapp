@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+h1{
+text-align: center;
+color: cyan;
+}
+h3{
+  padding-top: 50px;
+  text-align: center;
+  color: red;
+}
+#board{
+  display: flexbox;
+  color: lime;
+  width: 300px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+
+}
+#game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.square{
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+}
+#gameresult{
+  padding-top: 50px;
+  color: blue;
+}
