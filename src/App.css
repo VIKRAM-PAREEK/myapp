@@ -31,11 +31,13 @@ h3{
 }
 .square{
   float: left;
+  font-size: 60px;
   width: 100px;
   height: 100px;
   border: 2px solid white;
   align-items: center;
   justify-content: center;
+  padding-top: 5px;
 }
 #gameresult{
   padding-top: 50px;
