@@ -66,7 +66,12 @@ class App extends Component{
   return (
       <div id="game">
           <h1>LET'S TIC TAC TOE</h1>
-          <h3>Player 1:X Player 2:O</h3>
+          <div id="player">
+            <h3 id="p1">Player 1: X </h3>
+            <h3 id="p2">Player 2: O</h3>
+          </div>
+          <div id="gameresult">{this.state.winner}</div>
+          <br/>
       <div id="board" align="center" onClick={(e)=>this.clicked(e)}>
           <div className="square" data-square="0"></div>
           <div className="square" data-square="1"></div>
@@ -79,8 +84,7 @@ class App extends Component{
           <div className="square" data-square="8"></div>
           
       </div>
-      <div id="gameresult">{this.state.winner}</div>
-    </div>
+      </div>
       );
 }
 }

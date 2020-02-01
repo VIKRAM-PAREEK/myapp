@@ -13,7 +13,6 @@ color: cyan;
 h3{
   padding-top: 50px;
   text-align: center;
-  color: red;
 }
 #board{
   display: flexbox;
@@ -42,4 +41,24 @@ h3{
 #gameresult{
   padding-top: 50px;
   color: blue;
+}
+.square:nth-child(3n){
+  border-right: 0;
+}
+.square:nth-child(3n+1){
+  border-left: 0;
+}
+.square:nth-child(1), .square:nth-child(2) ,  .square:nth-child(3){
+  border-top: 0;
+}
+.square:nth-child(7), .square:nth-child(8), .square:nth-child(9){
+  border-bottom: 0;
+}
+#p1,#p2{
+  float: left;
+  color: darkred;
+}
+#p2{
+  padding-left: 100px;
+  color: yellowgreen;
 }
